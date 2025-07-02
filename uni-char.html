@@ -10,17 +10,25 @@
     <div class="main-container-wrapper">
       <div class="main-container">
         <h1 class="header">Unique Character Counter</h1>
-        <input
+        <textarea
           class="text-input"
           type="text"
           id="userInput"
           name="text"
           placeholder="type something...."
-        />
+          rows="4"
+        ></textarea>
         <button class="count-btn" onclick="countUniqueChars()">Count</button>
-        <div class="unique-result-box" id="uniqueBox"></div>
+        <div class="unique-result-box hidden" id="uniqueBox"></div>
+      </div>
+      <div class="stats-panel">
+        <div class="characters-count stat-item">Characters<span>0</span></div>
+        <div class="words-count stat-item">Words<span>0</span></div>
+        <div class="sentences-count stat-item">Sentences<span>0</span></div>
+        <div class="paragraphs-count stat-item">Paragraphs<span>0</span></div>
+        <div class="spaces-count stat-item">Spaces<span>0</span></div>
       </div>
     </div>
     <script src="/js/app.js"></script>
   </body>
-</html>
+</html0
